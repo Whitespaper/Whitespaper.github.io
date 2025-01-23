@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机图片自动跳转</title>
+    <script>
+        // 当页面加载时自动执行
+        window.onload = function() {
+            var randomIndex = Math.floor(Math.random() * 20);  // 生成一个0到19之间的随机数
+            // 存储图片页面的链接
+            var urls = [
+                "https://s21.ax1x.com/2025/01/23/pEAq9mD.png",
+                "https://s21.ax1x.com/2025/01/23/pEALCvV.png",
+                "https://s21.ax1x.com/2025/01/23/pEALiuT.png",
+                "https://s21.ax1x.com/2025/01/23/pEAOMJs.png",
+                "https://s21.ax1x.com/2025/01/23/pEAOlzq.png",
+                "https://s21.ax1x.com/2025/01/23/pEAO8yV.png",
+                "https://s21.ax1x.com/2025/01/23/pEAOGLT.png",
+                "https://s21.ax1x.com/2025/01/23/pEAOYeU.png",
+                "https://s21.ax1x.com/2025/01/23/pEAOtwF.png",
+                "https://s21.ax1x.com/2025/01/23/pEAONo4.png",
+                "https://s21.ax1x.com/2025/01/23/pEAOaFJ.png",
+                "https://sm.ms/image/a7MWgqd5DfuwYJG",
+                "https://sm.ms/image/z6AmSBYtLr8M7sn",
+                "https://sm.ms/image/sjEJrhngWOe6Lcm",
+                "https://sm.ms/image/ZYxbl6MnmIovFE5",
+                "https://sm.ms/image/4cfneMoCVEpTlXb",
+                "https://sm.ms/image/ExWL2r5NOsPbKkj",
+                "https://sm.ms/image/K3yIwALoRnQZMTf",
+                "https://sm.ms/image/2fAWpGaJc3obK4n"
+            ];
+
+            // 自动跳转到对应的链接
+            window.location.href = urls[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <!-- 页面内容可以为空，因为它会直接跳转 -->
+</body>
+</html>
